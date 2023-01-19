@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="topo">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="corpo">
+        <p class="paragrafo">Converter <b>From</b>: </p>
+        <select class="select">
+            <option></option>
+            <option>Real BR - R$</option>
+            <!--para a proxima atualizacao os itens abaixo-->
+            <!--<option>Dólar U.S.A - US$</option>-->
+           <!-- <option>Euro - €</option>-->
+        </select>
+        <p class="paragrafo">Converter <b>To</b>: </p>
+        <select id="select-moedas" class="select">
+            <option ></option>
+            <option >Real BR - R$</option>
+            <option >Dólar U.S.A - US$</option>
+            <option >Euro - €</option>
+        </select>
+        <p class="paragrafo">Value</p>
+        <input id="input" placeholder="Ex: R$10.000" type="number">
+        <button id="convert">To convert</button>
+        <div class="result">
+            <div class="caixaMenor">
+                <img  src="./IMG/brasil.png" alt="">
+                <p class="paragrafo">Real Brasileiro</p>
+                <p class="paragrafoNegrito" id="texto-real">R$ 10.000</p>
+            </div>
+
+            <img id="seta" src="./IMG/Vector.png" alt="">
+
+            <div class="caixaMenor">
+                <img id="bandeira-moedas" src="./IMG/estados-unidos.png" alt="">
+                <p class="paragrafo" id="texto-moedas">Dólar Americano</p>
+                <p class="paragrafoNegrito" id="input-moedas">$ 2.000</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
